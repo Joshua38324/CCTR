@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" href="styles.css">
-    <title></title>
-    <header><h1></h1>
-    <nav></nav>
-    <nav></nav>
-    <nav> </nav>
+    <title>Calculadora</title>
+    <div class="principal">
+        <header>
+        <h1>Calculadora</h1>
+        </header>
+    <main>
+        <div class="calculadora">
+            <input type="text" id= "pantalla" readonly>
+            <br>
+            <input id="botones" type="button" value="1" onclick="agregar('1')">
+            <input id="botones" type="button" value="2" onclick="agregar('2')">
+            <input id="botones" type="button" value="3" onclick="agregar('3')">
+            <input id="botones" type="button" value="4" onclick="agregar('4')">
+            <br>
+            <input id="botones" type="button" value="5" onclick="agregar('5')">
+            <input id="botones" type="button" value="6" onclick="agregar('6')">
+            <input id="botones" type="button" value="7" onclick="agregar('7')">
+            <input id="botones" type="button" value="8" onclick="agregar('8')">
+            <br>
+            <input id="botones" type="button" value="9" onclick="agregar('9')">
+            <input id="botones" type="button" value="0" onclick="agregar('0')">
+            <input id="botonesS" type="button" value="-" onclick="agregar('-')">
+            <input id="botonesS" type="button" value="+" onclick="agregar('+')">
+            <br>
+            <input id="botonesS" type="button" value="*" onclick="agregar('*')">
+            <input id="botonesS" type="button" value="/" onclick="agregar('/')">
+            <input id="botonesS" type="button" value="." onclick="agregar('.')">
+            <input id="botonesC" type="button" value="C" onclick="borrar()">
+            <input id="botonesf" type="button" value="=" onclick="calcular()">
+            <br>
+</div>
 
-</header>
-    <body>
-       <ul>
-        <li id="seleccionable"></li>
-       </ul>
- </body>
+    </main>
+    <footer>Este es el footer</footer>
+    </div>
  <script src="script.js"></script>
 </html>

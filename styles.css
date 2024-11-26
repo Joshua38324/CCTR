@@ -1,1 +1,113 @@
+.principal
+{
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+header
+{
+        background-color: rgba(0, 0, 0, 0.402);
+    text-align: center;
+color: white;
 
+
+}
+.calculadora
+{
+    margin-top: 2cm;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.1cm;
+    border: solid 1px black;
+    margin-left: 33%;
+    margin-right: 33%;
+    box-shadow:rgb(80, 80, 80) 0.5cm 0.5cm 1cm;
+    margin-bottom: 2cm;
+}
+
+#pantalla
+{
+    cursor: none;
+    font-size: 1cm;
+    text-align: end;
+    border-radius: none;
+    padding: 1cm;
+   margin: 1cm;
+   width: 10cm;
+color: black;
+border-radius: 0.1cm;
+outline: none;
+
+}
+
+#botones
+{
+    font-size: 0.5cm;
+    margin: 0.1cm;
+    padding: 0.6cm;
+    width: 3cm;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 0.1cm;
+
+}
+
+#botonesf
+{
+    font-size: 0.5cm;
+    margin: 0.1cm;
+    padding: 0.6cm;
+    width: 3cm;
+    cursor: pointer;
+    border-radius: 0.1cm;
+    border: none;
+    margin-bottom: 0.5cm;
+    background-color: rgb(127, 205, 139);
+    border: 1px solid black;   
+    color: white;
+
+}
+#botonesS
+{
+    border: 1px solid black;
+    color: white;
+    font-size: 0.5cm;
+    margin: 0.1cm;
+    padding: 0.6cm;
+    width: 3cm;
+    cursor: pointer;
+    border-radius: 0.1cm;
+    background-color: rgb(127, 166, 205);
+
+}
+#botonesC
+{
+    border: 1px solid black;
+    color: white;
+    font-size: 0.5cm;
+    margin: 0.1cm;
+    padding: 0.6cm;
+    width: 3cm;
+    cursor: pointer;
+    border-radius: 0.1cm;
+    background-color: rgb(205, 127, 127);
+}
+
+#botones:hover, #botonesf:hover
+{
+    color: white;
+    background-color: rgb(185, 181, 184);
+    transition: 0.3s;
+}
+#botonesS:hover
+{
+}
+#botonesC:hover
+{
+}
+footer
+{
+    background-color: rgba(0, 0, 0, 0.402);
+    color: white;
+}

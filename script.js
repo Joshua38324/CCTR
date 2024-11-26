@@ -1,17 +1,14 @@
-const array = ['dormir', 'despertarse', 'comer', 'estudiar']
-array [array.length] = 'morir'
-let texto = ''
-for (let index = 0; index < array.length; index++)
+function agregar(valor) 
 {
-    texto += "<li>"+ array[index] + '</li>'
+    document.getElementById('pantalla').value += valor
 }
-document.getElementById('seleccionable').innerHTML = texto
-
-let texto2 = 'hola chavales. soy un. fracaso'
-let final = texto2.charAt(8)
-let texto4 = '       que pasa chicos'
-let texto5 = ' como estais'
-let final2 = texto4.trim().concat(texto5)
-let texto6 = texto.replace ('dormir', 'papear')
-console.log(final)
-console.log(texto6)
+function borrar()
+{
+    document.getElementById('pantalla').value = ''
+}
+function calcular()
+{
+    const valorPantalla = document.getElementById('pantalla').value
+    const resultado = eval(valorPantalla) 
+    document.getElementById('pantalla').value = resultado
+}
